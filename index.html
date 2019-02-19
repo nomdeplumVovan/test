@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <!--======= logo block=====   -->
+      <div class="header__logo"></div>
+      <!-- ====== navigation block======= -->
+      <div class="header__nav">
+        <div class="header__nav__link">
+          <a href="#">Главная</a>
+          <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="header__nav__link">
+          <a href="#">Свежие вакансии</a>
+          <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="header__nav__link">
+          <a href="#">Компании</a>
+          <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="header__nav__link">
+          <a href="#">Тренинги</a>
+          <i class="material-icons">arrow_drop_down</i>
+        </div>
+      </div>
+      <!-- ====== autorization block=======  -->
+      <div class="header__cabinet">
+        <div class="header__cabinet__autorization">
+          <i class="material-icons">enhanced_encryption</i>
+          <a href='#one' class="header__cabinet__link"> Войти в личный кабинет</a>
+        </div>
+        <div class="header__cabinet__registration">
+          <a href="#" class="header__cabinet__link">Регистрация компании</a>
+        </div>
+      </div>
+      <!-- =======mobile navigation ========= -->
+      <div class="header__nav-tablet">
+        <i class="material-icons"> menu </i>
+        <div class="burger">
+          <div class="header__nav__link">
+            <a href="#">Главная</a>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+          <div class="header__nav__link">
+            <a href="#">Свежие вакансии</a>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+          <div class="header__nav__link">
+            <a href="#">Компании</a>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+          <div class="header__nav__link">
+            <a href="#">Тренинги</a>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=========runner row======== -->
+    <div class="runnerRow">
+      <div class="runnerRow__text">Работа Плюс - сайт по трудоустройству №1 в Украине</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main">
+      <div class="main__about-servise">
+        <h3>Преимущества использования сервиса:</h3>
+        <div class="main__about-servise__description">
+          Сервис позволяет Вам легко и быстро находить интересующие Вас вакансии
+        </div>
+        <ul>
+          <li>Более <span> 8000 новых вакансий ежедневно</span> </li>
+          <li>Вакансии только от проверенных кампаний</li>
+          <li>Гарантированное трудоустройство</li>
+        </ul>
+
+        <div class="link-long-arrow">
+          <a href="#">Узнать о всех преимуществах</a><i class="material-icons long-arrow">
+            trending_flat
+          </i></div>
+      </div>
+
+      <!-- ====== CSS and JS slider ========== -->
+      <div class="main__special-offer">
+        <h3>Спецпредложения</h3>
+        <div class="main__special-offer__slider">
+          <i class="material-icons" id="left" onclick="showPrevSlide()">arrow_back_ios</i>
+          <div class="main__special-offer__slider-fields animation " id="slide">
+            <div class="slide" id="slide1">
+              <div class="text">
+                <div class="text__h4">Работники на стройку</div>
+                <div>Киевжитлобуд</div>
+              </div>
+              <div class="price">
+                <div class="price__h4">7000 грн/мес</div>
+                <div> (+ премии)</div>
+              </div>
+            </div>
+            <div class="slide-hide " id="slide2">
+              <div class="text">
+                <div class="text__h4">Купите Автомобиль</div>
+                <div>АвтоЗАЗ</div>
+              </div>
+              <div class="price">
+                <div class="price__h4">$17000</div>
+                <div> (недорого)</div>
+              </div>
+            </div>
+            <div class="slide-hide " id="slide3">
+              <div class="text">
+                <div class="text__h4">Мы профессионалы</div>
+                <div>Забота++</div>
+              </div>
+              <div class="price">
+                <div class="price__h4">Качественно</div>
+                <div> (но дорого)</div>
+              </div>
+            </div>
+          </div>
+          <i class="material-icons" id="right" onclick="showNextSlide()">arrow_forward_ios</i>
+        </div>
+        <!--========link on bottom slider======   -->
+        <div class="main__special-offer__link">
+          <div class="link-long-arrow">
+            <a href="#"> Посмотреть остальные 12 спецпредложений </a><i class="material-icons long-arrow">
+              trending_flat
+            </i></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- ======= advertisment ======== -->
+    <div class="advertisment">
+      <div class="advertisment__field"> Баннер 945*90 рх</div>
+      <div class="advertisment__link">
+        <a href=""> Реклама на сайте</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer__rights">Rabotaplus.ua &copy; 2014 Все права защищены</div>
+      <div class="footer__phone"> <span>Телефон 8 800 888-888-88</span> (бесплатно по Украине со стационарных
+        телефонов)
+      </div>
+      <div class="footer__support"> Эл. почта <a href="mailto:support@rabotaplus.ua">support@rabotaplus.ua</a> </div>
+    </div>
+  </footer>
+
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+</body>
+
+</html>
